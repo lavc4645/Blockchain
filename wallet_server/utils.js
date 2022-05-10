@@ -1,7 +1,7 @@
 import Web3 from 'web3';
 //import Wallet from './contracts/Wallet.json';
 
-const getWeb3 = () => {
+module.exports = function(){
     //return new Web3('http://localhost:9545')//local ganache chain
         var web3 = null;
         try
@@ -34,4 +34,3 @@ const getWeb3 = () => {
 
 //https://rinkeby.infura.io/v3/0e8622ff78a04db4beff04c5a80583a1
 
-export {getWeb3};

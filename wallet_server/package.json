@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
     "build": "babel server.js utils.js -d dist",
     "start": "npm run build && node dist/server.js"

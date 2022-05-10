@@ -1,8 +1,11 @@
 {
-  "name": "Projects",
+  "name": "tokens_wallet",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.0.8",
-    "web3": "^1.7.3",
-    "web3.js-browser": "^0.2.0"
+    "web3": "^1.7.3"
   }
 }

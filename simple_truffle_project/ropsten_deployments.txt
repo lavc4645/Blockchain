@@ -1,0 +1,177 @@
+lav@user-Inspiron-3268:~/Documents/Backuop/BlockChainlav@user-Inspiron-3268:~/Documenlav@user-Inspiron-3268:~/Documents/Backuop/BlockChain/Projects/simple_truffle_projec
+t$ truffle migrate --network ropsten
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/SharedTokenWallet.sol
+> Artifacts written to /home/lav/Documents/Backuop/BlockChain/Projects/simple_truffle_project/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.13+commit.abaa5c0e.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xb9dfbb396dbe735ee1103ccaca2a4f3ca6bb62f6d90b07dab768a511a374e987
+   > Blocks: 6            Seconds: 425
+   > contract address:    0x203b569f873DBAdE6b55443603c9A9AB855FF465
+   > block number:        12253267
+   > block timestamp:     1652181042
+   > account:             0x76F4f3cBBA6cA4D4301359d4C0462FE95F82335B
+   > balance:             4.510406792058850121
+   > gas used:            250154 (0x3d12a)
+   > gas price:           356.446662604 gwei
+   > value sent:          0 ETH
+   > total cost:          0.089166558437041016 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 12253268)
+   > confirmation number: 2 (block: 12253269)
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.089166558437041016 ETH
+
+
+2_initial_migration copy.js
+===========================
+
+   Deploying 'SharedTokenWallet'
+   -----------------------------
+   > transaction hash:    0xc027bc682bdc60301e4916070277784cb93567667b17b5b75032bf7f493712a1
+   > Blocks: 2            Seconds: 93
+   > contract address:    0x568e2e11c7eb790c3F304042Fe3d56B0067AF318
+   > block number:        12253272
+   > block timestamp:     1652181220
+   > account:             0x76F4f3cBBA6cA4D4301359d4C0462FE95F82335B
+   > balance:             3.957236004629685263
+   > gas used:            1526492 (0x174adc)
+   > gas price:           351.99916554 gwei
+   > value sent:          0 ETH
+   > total cost:          0.53732391020348568 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+^Clav@user-Inspiron-3268:~/Documents/Backuop/BlockChain/Projects/simple_truffle_project$ truffle migrate --network ropsten
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+2_initial_migration copy.js
+===========================
+
+   Deploying 'SharedTokenWallet'
+   -----------------------------
+ *** Deployment Failed ***
+
+"SharedTokenWallet" could not deploy due to insufficient funds
+   * Account:  0x76F4f3cBBA6cA4D4301359d4C0462FE95F82335B
+   * Balance:  3957236004629685263 wei
+   * Message:  insufficient funds for gas * price + value
+   * Try:
+      + Using an adequately funded account
+      + If you are using a local Geth node, verify that your node is synced.
+
+
+Exiting: Review successful transactions manually by checking the transaction hashes above on Etherscan.
+
+
+Error:  *** Deployment Failed ***
+
+"SharedTokenWallet" could not deploy due to insufficient funds
+   * Account:  0x76F4f3cBBA6cA4D4301359d4C0462FE95F82335B
+   * Balance:  3957236004629685263 wei
+   * Message:  insufficient funds for gas * price + value
+   * Try:
+      + Using an adequately funded account
+      + If you are using a local Geth node, verify that your node is synced.
+
+    at /usr/local/lib/node_modules/truffle/build/webpack:/packages/deployer/src/deployment.js:379:1
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at Migration._deploy (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:68:1)
+    at Migration._load (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:54:1)
+    at Migration.run (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/Migration.js:202:1)
+    at Object.runMigrations (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:152:1)
+    at Object.runFrom (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:117:1)
+    at Object.run (/usr/local/lib/node_modules/truffle/build/webpack:/packages/migrate/index.js:94:1)
+    at module.exports (/usr/local/lib/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate/runMigrations.js:10:1)
+    at Object.module.exports [as run] (/usr/local/lib/node_modules/truffle/build/webpack:/packages/core/lib/commands/migrate/run.js:41:1)
+    at Command.run (/usr/local/lib/node_modules/truffle/build/webpack:/packages/core/lib/command.js:189:1)
+Truffle v5.5.11 (core: 5.5.11)
+Node v16.15.0
+lav@user-Inspiron-3268:~/Documents/Backuop/BlockChain/Projects/simple_truffle_project$ truffle migrate --network ropsten
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/SharedTokenWallet.sol
+> Compilation warnings encountered:
+
+    Warning: Unnamed return variable can remain unassigned. Add an explicit return with value to all non-reverting code paths or name the variable.
+  --> project:/contracts/SharedTokenWallet.sol:36:49:
+   |
+36 |     function setPlayerAccount1() public returns(string memory){
+   |                                                 ^^^^^^^^^^^^^
+
+
+> Artifacts written to /home/lav/Documents/Backuop/BlockChain/Projects/simple_truffle_project/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.13+commit.abaa5c0e.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+2_initial_migration copy.js
+===========================
+
+   Deploying 'SharedTokenWallet'
+   -----------------------------
+   > transaction hash:    0x3f07aa326be0564bdced7a83297b3e80142353650219e5ac9ff4f73c21144ce2
+   > Blocks: 1            Seconds: 157
+   > contract address:    0x243e593E65f97c21d45D39504414eA099859190d
+   > block number:        12253291
+   > block timestamp:     1652181986
+   > account:             0x76F4f3cBBA6cA4D4301359d4C0462FE95F82335B
+   > balance:             3.414107817426337415
+   > gas used:            1442099 (0x160133)
+   > gas price:           376.623371352 gwei
+   > value sent:          0 ETH
+   > total cost:          0.543128187203347848 ETH
+
+   Pausing for 2 confirmations...
+
+   -------------------------------
+   > confirmation number: 1 (block: 12253292)
+   > confirmation number: 2 (block: 12253293)
+   ⠏ Saving migration to chain.
+Exiting: Review successful transactions manually by checking the transaction hashes above on Etherscan.
+
+
+insufficient funds for gas * price + value
+Truffle v5.5.11 (core: 5.5.11)
+Node v16.15.0
